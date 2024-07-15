@@ -13,4 +13,4 @@ export BUILD_USERNAME=Assunzain &&
 export BUILD_HOSTNAME=crave && 
 export TZ=Asia/Jakarta && 
 . build/envsetup.sh && 
-lunch afterlife_X01AD-userdebug && m afterlife -j16'
+lunch afterlife_X01AD-userdebug && make installclean && m afterlife -j16'
