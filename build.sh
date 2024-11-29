@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # Rom source repo
-repo init -u https://github.com/LineageOS/android -b lineage-21.0 --git-lfs
+repo init -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone https://github.com/Assunzain/local_manifest -b crdroid14 .repo/local_manifests
+git clone https://github.com/Assunzain/local_manifest -b 13-Alphadroid .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -29,6 +29,6 @@ echo "======= Export Done ======"
 echo "============="
 m installclean
 echo "============="
-lunch lineage_X01AD-ap2a-userdebug
+lunch lineage_X01AD-userdebug
 echo "============="
 m bacon -j16
