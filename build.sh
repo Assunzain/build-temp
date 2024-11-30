@@ -29,6 +29,6 @@ echo "======= Export Done ======"
 echo "============="
 m installclean
 echo "============="
-lunch lineage_X01AD-userdebug
+lunch derp_X01AD-userdebug
 echo "============="
-m bacon -j16
+mka derp -j16
