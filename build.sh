@@ -3,13 +3,13 @@
 rm -rf .repo/local_manifests/
 
 # Rom source repo
-repo init -u https://github.com/alphadroid-project/manifest -b alpha-13 --git-lfs
+repo init -u https://github.com/DerpFest-AOSP/manifest -b 13 --git-lfs
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone https://github.com/Assunzain/local_manifest -b 13-Alphadroid .repo/local_manifests
+git clone https://github.com/Assunzain/local_manifest -b Derp .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
