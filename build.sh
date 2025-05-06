@@ -3,13 +3,14 @@
 rm -rf .repo/local_manifests/
 
 # Rom source repo
-repo init -u https://github.com/DerpFest-AOSP/manifest -b 13 --git-lfs
+repo init -u https://github.com/ResurrectionRemix/platform_manifest.git -b Q
+
 echo "=================="
 echo "Repo init success"
 echo "=================="
 
 # Clone local_manifests repository
-git clone https://github.com/Assunzain/local_manifest -b Derp .repo/local_manifests
+git clone https://github.com/Assunzain/local_manifest -b 10-rr .repo/local_manifests
 echo "============================"
 echo "Local manifest clone success"
 echo "============================"
@@ -29,6 +30,6 @@ echo "======= Export Done ======"
 echo "============="
 m installclean
 echo "============="
-lunch derp_X01AD-userdebug
+lunch rr_X01AD-userdebug
 echo "============="
-mka derp -j16
+mka bacon -j16
